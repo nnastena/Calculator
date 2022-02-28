@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <div class="nums">
+                <span id="mathSign">
+                    +
+                </span>
+                <div>
+                    <p id="firstNum"></p>
+                    <p id="secondNum"></p>
+                </div>
+            </div>
+            <p class="res" id="mathResult"></p>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard__header">
+                <button class="button-math" onclick="clearAll()">C</button>
+                <button class="button-math" onclick="deleteByOne()">&lt;X</button>
+                <button class="button-math" onclick="alert('Эта кнопочка для красоты, я не придумала ей назначения')">%</button>
+            </div>
+            <div class="keyboard__right">
+                <button class="button-math" onclick="addSign('/')">/</button>
+                <button class="button-math" onclick="addSign('*')">*</button>
+                <button class="button-math" onclick="addSign('-')">-</button>
+                <button class="button-math" onclick="addSign('+')">+</button>
+            </div>
+            <div class="keyboard__main">
+                <button class="button-number" onclick="addNum(8)">8</button>
+                <button class="button-number" onclick="addNum(7)">7</button>
+                <button class="button-number" onclick="addNum(9)">9</button>
+                <button class="button-number" onclick="addNum(4)">4</button>
+                <button class="button-number" onclick="addNum(5)">5</button>
+                <button class="button-number" onclick="addNum(6)">6</button>
+                <button class="button-number" onclick="addNum(1)">1</button>
+                <button class="button-number" onclick="addNum(2)">2</button>
+                <button class="button-number" onclick="addNum(3)">3</button>
+            </div>
+            <div class="keyboard__footer">
+                <button class="button-number button-null" onclick="addNum(0)">0</button>
+                <button class="button-number" onclick="addPoint()">.</button>
+                <button class="button-result" onclick="getResult()">=</button>
+            </div>
+            
+
+                
+
+                
+            
+            
+        </div>
+    </div>
+
+    <script src="app.js"> </script>
+</body>
+</html>
